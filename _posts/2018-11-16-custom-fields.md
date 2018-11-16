@@ -98,15 +98,17 @@ En estas anotaciones encontraremos los siguientes datos:
 
 A continuación veremos el código correspondiente a nuestro ejemplo:
 
-  @FieldType(
-    id = "Persona",
-    label = @Translation("Persona"),
-    category = @Translation("Nuestro Modulo"),
-    description = @Translation("Añade los campos relacionados con los datos personales de una persona."),
-    default_widget = "PersonaWidget",
-    default_formatter = "PersonaFormatter"
-  )
-
+```php
+/**   @FieldType(
+*    id = "Persona",
+*    label = @Translation("Persona"),
+*    category = @Translation("Nuestro Modulo"),
+*    description = @Translation("Añade los campos relacionados con los datos personales de una persona."),
+*    default_widget = "PersonaWidget",
+*    default_formatter = "PersonaFormatter"
+*  )
+*/
+```
 
 A continuacion implementaremos lo siguientes métodos:
 
@@ -315,6 +317,9 @@ Los métodos con mas relevancia dentro de field formatter son:
 
 
 <p>Una vez finalizado todo este proceso tan solo tendremos que limpiar la caché de nuestro Drupal y ya podremos seleccionar nuestro nuevo tipo de campo en nuestro Drupal mediante sitebuilding.
+
+En el siguiente enlace encontrareis otra explicación muy completa del tema en cuestión:
+[Writing custom fields in Drupal 8](https://capgemini.github.io/drupal/writing-custom-fields-in-drupal-8/)
 
 Se trata de una solución realmente potente para obtener un campo compuesto y no supone gran dificultad para alguien que lleve poco tiempo trabajando con Drupal 8.</p>
 
