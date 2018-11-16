@@ -48,9 +48,8 @@ Podrás encontrar el Módulo Field Collection en el siguiente enlace:
 Si nos decantamos por codificar nosotros mismos nuestro "custom field" necesitaremos en primer lugar crear un módulo.
 Para crear un módulo en Drupal 8 podemos seguir el siguiente árticulo de José Antonio Rodríguez: [Como crear un módulo en Drupal 8](https://www.ladrupalera.com/es/drupal/desarrollo/drupal8/crear-un-modulo-en-drupal-8)
 
-</br>
 Una vez contamos con nuestro módulo vamos a generar la estructura de nuestro campo custom "Persona". Al lío!!
-</br>
+
 
 <p>En primer lugar necesitaremos crear un plugin field type para que nuestro campo custom sea visible para la Field API de Drupal.
 De esta forma podremos seleccionarlo al añadir un nuevo campo a cualquier entidad.
@@ -71,7 +70,7 @@ Con la siguiente estructura:
         * FieldWidget/
           * PersonaWidget.php
 
-</br>
+
 
 ## FieldType
 Comenzaremos creando un nuevo fichero "PersonaField" dentro de la carpeta FieldType, donde definiremos la clase que corresponde con nuestro campo.
@@ -85,6 +84,7 @@ namespace Drupal\nuestro_modulo\Plugin\Field\FieldType;
 use Drupal\Core\Field\FieldItemBase;
 use Drupal\Core\TypedData\DataDefinition;
 use Drupal\Core\Field\FieldStorageDefinitionInterface as StorageDefinition;
+
 ```
 Posteriormene añadiremos unas anotaciones que identificarán nuestro tipo de campo o "field type".
 En estas anotaciones encontraremos los siguientes datos:
@@ -98,19 +98,15 @@ En estas anotaciones encontraremos los siguientes datos:
 
 A continuación veremos el código correspondiente a nuestro ejemplo:
 
-```php
-/**
- * @FieldType(
- *   id = "Persona",
- *   label = @Translation("Persona"),
- *   category = @Translation("Nuestro Modulo"),
- *   description = @Translation("Añade los campos relacionados con los datos personales de una persona."),
- *   default_widget = "PersonaWidget",
- *   default_formatter = "PersonaFormatter"
- * )
- */
-class PersonaField extends FieldItemBase {
-```
+  @FieldType(
+    id = "Persona",
+    label = @Translation("Persona"),
+    category = @Translation("Nuestro Modulo"),
+    description = @Translation("Añade los campos relacionados con los datos personales de una persona."),
+    default_widget = "PersonaWidget",
+    default_formatter = "PersonaFormatter"
+  )
+
 
 A continuacion implementaremos lo siguientes métodos:
 
@@ -123,6 +119,7 @@ A continuacion implementaremos lo siguientes métodos:
 En el siguiente ejemplo observamos como se utilizarían cada uno de dichos métodos para incluir la variable "nombre" a nuestro custom field "Persona":
 
 ```php
+class PersonaField extends FieldItemBase {
   public static function propertyDefinitions(StorageDefinition $storage) {
 
     $properties['nombre'] = DataDefinition::create('string')
@@ -189,7 +186,7 @@ En el siguiente ejemplo observamos como se utilizarían cada uno de dichos méto
 }
 ```
 Los diferentes tipos de datos que podremos utilizar para la variable $columns están disponibles en la siguiente url: [Tipos de Datos](https://www.drupal.org/node/159605)
-</br>
+
 
 ## FieldWidget
 El siguiente paso será crear un widget para nuestro campo custom que nos generará un nuevo elemento en el formulario.
@@ -274,10 +271,9 @@ class PersonaWidget extends WidgetBase {
 ```
 
 En el siguiente enlace se encuentra el listado de tipos de elementos permitidos: [Tipos de Elementos](https://api.drupal.org/api/drupal/elements)
-</br>
 
 
-##FieldFormatter
+## FieldFormatter
 Con los formatters definiremos como se mostrará nuestro campo.
 Para ello crearemos un fichero "PersonaFormatter.php" en la carpeta src/Plugin/FieldFormatter con las siguiente estructura:
 
@@ -317,11 +313,10 @@ Los métodos con mas relevancia dentro de field formatter son:
   * **settingsSummary:** Descripción de los ajustes realizados en el formatter
   * **viewElements:** El él único obligatorio y renderiza el valor de nuestro campo.
 
-</br>
-</br>
 
 <p>Una vez finalizado todo este proceso tan solo tendremos que limpiar la caché de nuestro Drupal y ya podremos seleccionar nuestro nuevo tipo de campo en nuestro Drupal mediante sitebuilding.
 
 Se trata de una solución realmente potente para obtener un campo compuesto y no supone gran dificultad para alguien que lleve poco tiempo trabajando con Drupal 8.</p>
-</br>
+
+
 Ánimo y a Drupalear!!
