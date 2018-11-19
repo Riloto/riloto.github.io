@@ -325,3 +325,5 @@ Se trata de una solución realmente potente para obtener un campo compuesto y no
 
 
 Ánimo y a Drupalear!!
+
+<script id="dsq-count-scr" src="//riloto8-github-io.disqus.com/count.js" async></script>
