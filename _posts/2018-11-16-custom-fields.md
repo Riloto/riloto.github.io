@@ -318,16 +318,7 @@ Los métodos con mas relevancia dentro de field formatter son:
 
 <p>Una vez finalizado todo este proceso tan solo tendremos que limpiar la caché de nuestro Drupal y ya podremos seleccionar nuestro nuevo tipo de campo en nuestro Drupal mediante sitebuilding.
 
-En el siguiente enlace encontrareis otra explicación muy completa del tema en cuestión:
-[Custom Fields en Drupal8](https://capgemini.github.io/drupal/writing-custom-fields-in-drupal-8)
-
 Se trata de una solución realmente potente para obtener un campo compuesto y no supone gran dificultad para alguien que lleve poco tiempo trabajando con Drupal 8.</p>
 
 
 Ánimo y a Drupalear!!
-
-<script id="dsq-count-scr" src="//riloto8-github-io.disqus.com/count.js" async></script>
-
-<div class="disqus">
-  {% include disqus.html %}
-</div>
