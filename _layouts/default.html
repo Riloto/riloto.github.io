@@ -30,6 +30,8 @@
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">Sobre mi</a>
           </nav>
+          <script type="text/javascript" src="/simple-jekyll-search.js"></script>
+          <script src="{{ site.baseurl }}/simple-jekyll-search.js"></script>
         </header>
       </div>
     </div>
@@ -37,6 +39,13 @@
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
+
+    <input type="text" id="search-input" placeholder="Search ...">
+    <br/>
+    <div id="results-container"></div>
+
+    <script src="{{ site.baseurl }}/simple-jekyll-search.min.js"></script>
+
 <!--     <div class="disqus">
         {% include disqus.html %}
     </div> -->
@@ -44,6 +53,20 @@
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
+
+          <script type="text/javascript">
+            SimpleJekyllSearch({
+              searchInput: document.getElementById('search-input'),
+              resultsContainer: document.getElementById('results-container'),
+              json: 'search.json',
+              searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+              noResultsText: 'No se han encontrado resultados.',
+              limit: 10,
+              fuzzy: false,
+              exclude: ['Welcome']
+            })
+        </script>
+
         </footer>
       </div>
     </div>
