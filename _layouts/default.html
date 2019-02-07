@@ -36,15 +36,15 @@
       </div>
     </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <input type="text" id="search-input" placeholder="Search ...">
+    <input type="text" id="search-input" style="text-align: center" placeholder="Buscar Articulo...">
     <br/>
     <div id="results-container"></div>
 
     <script src="{{ site.baseurl }}/simple-jekyll-search.min.js"></script>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
 
 <!--     <div class="disqus">
         {% include disqus.html %}
