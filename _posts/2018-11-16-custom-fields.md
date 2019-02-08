@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creacion de custom Fields en Drupal 8
-categories:
+tags:
   - github
   - drupal
   - custom
@@ -10,6 +10,10 @@ categories:
   - compound
   - module
   - backend
+categories:
+  - drupal
+  - backend
+  - custom
 comments: true
 visible: 1
 ---
