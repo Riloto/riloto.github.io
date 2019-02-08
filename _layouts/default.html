@@ -28,10 +28,10 @@
 
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">Sobre mi</a>
-            <input type="text" id="search-input" placeholder="Buscar Articulo...">
+            <a style="float:left" href="{{ site.baseurl }}/about">Sobre mi</a>
+            <input type="text" id="search-input" style="float:right" placeholder="Buscar Articulo...">
             <br/>
-            <div id="results-container"></div>
+            <div id="results-container" style="border: 2px solid black"></div>
           </nav>
           <script type="text/javascript" src="/simple-jekyll-search.js"></script>
           <script src="{{ site.baseurl }}/simple-jekyll-search.js"></script>
@@ -58,7 +58,7 @@
               searchInput: document.getElementById('search-input'),
               resultsContainer: document.getElementById('results-container'),
               json: 'search.json',
-              searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+              searchResultTemplate: '<a href="{url}" title="{desc}">{title}</a>',
               noResultsText: 'No se han encontrado resultados.',
               limit: 10,
               fuzzy: false,
