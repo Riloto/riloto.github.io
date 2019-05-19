@@ -15,13 +15,13 @@ visible: 1
 
 Durante este último fin de semana tuve la oportunidad de acudir a mi primera DrupalCamp Spain en Conil. Lo cierto es que no podía dejar pasar la oportunidad de plasmar mis experiencias durante este evento que me ha ayudado a sentirme más parte de la comunidad de Drupal.
 
-##DrupalCamp Spain 2019
+## DrupalCamp Spain 2019
 Comencemos explicando; para los que no conozcan de que estamos hablando; que la DrupalCamp es un evento de comunidad donde se dan cita todos aquellos desarrolladores que trabajamos con Drupal.
 A diferencia de la DrupalCon que se celebra a nivel mundial (o europeo), la DrupalCamp Spain es un evento a nivel nacional. Cada año se celebra en una ciudad diferente y este año ha sido el turno de Conil (Cadiz). [DrupalCamp Spain 2019](https://2019.drupalcamp.es/)
 
 El evento suele desarrollarse durante toda una semana con talleres, entregas de premios y demás actividades aunque el plato fuerte son las conferencias y las actividades realizadas durante el fin de semana.
 
-#Curso de BackEnd en Drupal 8
+## Curso de BackEnd en Drupal 8
 Desde el Martes hasta el Jueves se impartieron diferentes cursos de SiteBuilding, BackEnd y FrontEnd respectivamente. Estos cursos fueron impartidos por Forcontu, el principal formador en Drupal en castellano de Drupal.
 
 Aproveché la oportunidad de participar en este curso de BackEnd para ampliar y refinar mis conocimientos sobre BackEnd en Drupal 8.
@@ -30,7 +30,7 @@ Todo ello de la mano de Fran Gil y utilizando Drush, Composer y Drupal Console.
 
 ![Curso BackEnd Forcontu](/../images/Curso_BackEnd.jpg)
 
-#Ahora si empieza lo bueno!
+## Ahora si empieza lo bueno!
 El viernes comenzó el día con la llegada y recogida de acreditaciones.
 A las 9:30 arrancó el evento con la charla de Bienvenida tras la que comenzaron las conferencias en 2 ubicaciones en paralelo, Sala 1XInternet (situada en la Casa de la Cultura de Conil) y la Sala Balidea (situada en La Chanca).
 
@@ -64,7 +64,7 @@ Estoy deseando poder ver en video el resto de sesiones a las que no pude ir y po
 
 ![Sesiones Chanca](/../images/Sesion-la-Chanca.jpg)
 
-##Disfrutando de Conil y de la Comunidad
+## Disfrutando de Conil y de la Comunidad
 El sábado por la tarde tuve la oportunidad de participar en una de las actividades organizadas dentro de **Family in Drupal**.
 Esta iniciativa arrancaba en esta edición de la DrupalCamp Spain con el objetivo de promover actividades para los acompañantes de los asistentes al evento.
 
@@ -78,7 +78,7 @@ Durante todo el fin de semana, los participantes pudieron participar en activida
   * Clase de iniciación al Surf
 
 Yo tuvé la suerte de poder asistir a la Clase de Iniciación al Surf y disfrutar durante 2 horas de las olas y el mar de Conil junto a un grupo excelente.
-(Y no se me dió muy mal para ser mi primera vez con una tabla de Surf :smile: )
+(Y no se me dió muy mal para ser mi primera vez con una tabla de Surf)
 
 ![Surf Drupal Family](/../images/Surf-Drupal-Family.jpg)
 
