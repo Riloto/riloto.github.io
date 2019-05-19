@@ -29,6 +29,7 @@ Los que asistimos pudimos aprender/repasar la creación de módulos, formularios
 Todo ello de la mano de Fran Gil y utilizando Drush, Composer y Drupal Console.
 
 ![Curso BackEnd Forcontu](/../images/Curso_BackEnd.jpg)
+(Foto de [@rtejeiro](https://twitter.com/rteijeiro))
 
 ## Ahora si empieza lo bueno!
 El viernes comenzó el día con la llegada y recogida de acreditaciones.
@@ -37,6 +38,7 @@ A las 9:30 arrancó el evento con la charla de Bienvenida tras la que comenzaron
 Las conferencias que tenian lugar en la Casa de la Cultura eran en su mayoría en inglés y las que se realizaban en La Chanca en Castellano.
 
 ![La Chanca Conil](/../images/La-Chanca-Drupalcamp.jpg)
+(Foto de [@martinrayo](https://twitter.com/martinrayo))
 
 En mi caso comencé asistiendo a las sesiones en la Casa de la Cultura para comprobar el grado de dificultad que supondría para mí la comprensión de una conferencia completa en inglés. Me alegré muchisimo al comprobar que era capaz de seguir las conferencias con facilidad y que el handicap que tendría que tener en cuenta sería mi conocimiento sobre Drupal.
 De modo que tomé la decisión de asistir a las sesiones que me resultasen más interesantes o atractivas en cada momento.
@@ -44,6 +46,7 @@ De modo que tomé la decisión de asistir a las sesiones que me resultasen más 
 El viernes antes de comer, todos los asistentes nos hicimos la tradicional foto de grupo de la DrupalCamp Spain 2019.
 
 ![Foto de Grupo DrupalCamp 2019](/../images/DrupalcampSpain2019.jpg)
+(Foto de Jorge Carpio)
 
 Todas las sesiones eran realmente intersantes y aprendí muchisimo sobre métodos, herramientas y estrategias que poder utilizar para lograr cualquier objetivo utilizando Drupal.
 Por otra parte, tener la oportunidad de conocer a personas que son un referente dentro de la comunidad española de Drupal y de las que ya había "oído hablar" al buscar cualquier duda en internet es emocionante.
@@ -63,6 +66,7 @@ Y muchas más a las que asistí y me parecieron intersentísimas.
 Estoy deseando poder ver en video el resto de sesiones a las que no pude ir y poder revivir el ambiente tan bueno que se respiraba entre compañeros drupaleros.
 
 ![Sesiones Chanca](/../images/Sesion-la-Chanca.jpg)
+(Foto de [@ladrupalera](https://twitter.com/ladrupalera))
 
 ## Disfrutando de Conil y de la Comunidad
 El sábado por la tarde tuve la oportunidad de participar en una de las actividades organizadas dentro de **Family in Drupal**.
@@ -81,6 +85,7 @@ Yo tuvé la suerte de poder asistir a la Clase de Iniciación al Surf y disfruta
 (Y no se me dió muy mal para ser mi primera vez con una tabla de Surf)
 
 ![Surf Drupal Family](/../images/Surf-Drupal-Family.jpg)
+(Foto de [@martinrayo](https://twitter.com/martinrayo))
 
 Las fiestas por la noche terminaron de cerrar un fin de semana estupendo donde seguir conociendo a compañeros entre cervezas y acompañados de buena música.
 Lugar donde planear próximos eventos de la comunidad local e impulso para mejorar y ampliar conocimientos relacionados con Drupal.
