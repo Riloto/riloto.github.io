@@ -22,13 +22,11 @@ A la hora de implementar un formulario en Drupal, una de las soluciones más uti
 Para quien no sepa que es Webform, se trata de un módulo contribuido utilizado para la generación de formularios.
 Esta herramienta tiene una gran potencia de cara a la gestión de formularios mediante SiteBuilding.
 
-Bajo mi punto de vista, una de las utilidades más significativas de este módulo es la presentación/ocultación de campos condicionalmente. 
-Es decir, no da la posibilidad de ocultar, bloquear o xxx un campo según el valor recogido en el mismo formulario. 
 
 ## Validación Personalizada 
 
-Webform aporta un mecanismo de validación de campos, ¿SI. no? 
-Pero de cara a aplicar una validación personalizada para un campo, como por ejemplo para que un campo tenga la structura DNI para almacenarse, deberíamos aplicar una validación propia para dicho campo.
+Webform aporta algún mecanismo de validación de campos, pero puede que necesitemos definir una validación propia (custom) para un campo específico. 
+Para aplicar una validación personalizada para un campo, como por ejemplo para que un campo tenga la structura DNI para almacenarse, deberíamos aplicar una validación propia para dicho campo.
 
 Para esto debemos utilizar un módulo custom creado previamente al que añadiremos la siguiente estructura de directorios:
 
@@ -77,7 +75,7 @@ class DammWebformHandler extends WebformHandlerBase {
   
 
    /**
-   * Validate lot number.
+   * Validate ID number (Spanish format).
    */
   private function validateIDNumber(FormStateInterface $formState) {
     $value = !empty($formState->getValue('dni')) ? Html::escape($formState->getValue('dni')) : NULL;
@@ -106,3 +104,5 @@ Por último debemos añadir nuestro handler al webform deseado en nuestro sitio,
 Pulsando en Add handler y seleccionando "Alter webform with custom validation" como muestra la siguiente imagen.
 
 ![Custom handler](/images/handler.png)
+
+De esta forma el Webform seleccionado comprobará que se cumpla nuestro criterio de validación antes de almacenar el formulario.
