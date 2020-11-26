@@ -62,7 +62,7 @@ use Drupal\Core\StringTranslation\StringTranslationTrait;
  *   submission = \Drupal\webform\Plugin\WebformHandlerInterface::SUBMISSION_OPTIONAL,
  * )
  */
-class DammWebformHandler extends WebformHandlerBase {
+class MyWebformHandler extends WebformHandlerBase {
 
     use StringTranslationTrait;
 
