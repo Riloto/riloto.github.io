@@ -6,7 +6,7 @@ permalink: /about/
 
 ![Ricardo](https://avatars3.githubusercontent.com/u/43862914?s=400&u=d8e142fadc3c6a9701bea96ad98d9cbee0eebf25&v=4)
 
-## Me Presento
+# Me Presento
 Me llamo Ricardo López Toro y soy de Montilla [Córdoba - Andalucía]. 
 Soy Graduado en Ingeniería Informática por la Universidad de Córdoba (UCO) y llevo trabajando con Drupal desde 2018.
 Actualmente trabajo con Drupal 8 para Ogilvy.
@@ -17,7 +17,9 @@ Drupal 8 para la Consejería de Igualdad y Políticas Sociales de la Junta de An
 Algunos de los proyectos en los que participé fueron:
 
 * Planes Locales de Intervención en Zonas Desfavorecidas 
-    ![](/images/Planes_locales.mp4)
+    <video width="320" height="240" controls>
+      <source src="/images/Planes_locales.mp4" type="video/mp4">
+    </video>
 * Sistema para la Gestión de Fondos Sociales Europeos (FSE)
 * Sistema de Información sobre Maltrato Infantil de Andalucía (SIMIA). [fases de análisis y diseño]
     

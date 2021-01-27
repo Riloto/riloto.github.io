@@ -48,14 +48,15 @@ En primer lugar definiremos una ruta; para ello editaremos/crearemos el fichero 
 
 Añadiremos las siguientes líneas:
 
-    my_modal.modal:
-      path: 'modal-element/modal'
-      defaults:
-        _title: 'My Modal'
-        _controller: '\Drupal\my_modal\Controller\CustomModalController::modal'
-      requirements:
-        _permission: 'access content'
-    
+```
+my_modal.modal:
+  path: 'modal-element/modal'
+    defaults:
+      _title: 'My Modal'
+      _controller: '\Drupal\my_modal\Controller\CustomModalController::modal'
+    requirements:
+      _permission: 'access content'
+```    
 
 Este código crea la ruta nombrada como my_modal.modal donde se indica que cuando un usuario acceda a la url
  "/modal-element/modal" dentro de nuestro site se lanzará nuestro modal. 
@@ -78,33 +79,32 @@ Este código crea la ruta nombrada como my_modal.modal donde se indica que cuand
 Dentro del fichero CustomModalController.php añadiremos el siguiente código:
    
 ```php
-    <?php
-    
-    /**
+<?php
+
+/**
      * @file
      * CustomModalController class.
      */
-    
-    namespace Drupal\my_modal\Controller;
-    
-    use Drupal\Core\Ajax\AjaxResponse;
+
+namespace Drupal\my_modal\Controller;
+
+use Drupal\Core\Ajax\AjaxResponse;
     use Drupal\Core\Ajax\OpenModalDialogCommand;
     use Drupal\Core\Controller\ControllerBase;
-    
-    class CustomModalController extends ControllerBase {
-    
-      public function modal() {
-        $options = [
-          'dialogClass' => 'popup-dialog-class',
-          'width' => '50%',
-        ];
-        $response = new AjaxResponse();
-        $response->addCommand(new OpenModalDialogCommand(t('Título del Modal'), t('Texto del modal'), $options));
-    
-        return $response;
-      }
-    }
-    
+
+class CustomModalController extends ControllerBase {
+
+  public function modal() {
+    $options = [
+      'dialogClass' => 'popup-dialog-class',
+      'width' => '50%',
+    ];
+    $response = new AjaxResponse();
+    $response->addCommand(new OpenModalDialogCommand(t('Título del Modal'), t('Texto del modal'), $options));
+
+    return $response;
+  }
+}    
 ```   
 
 Este código abrirá un pop-up como el que aparece en la siguiente imagen:
@@ -144,48 +144,49 @@ almacenará el código de nuestro bloque. La estructura de directorios de nuestr
 Dentro de ModalBlock.php añadiremos el siguiente código:
 
 ```php
-       <?php
-       /**
+<?php
+
+/**
         * @file
         * Contains \Drupal\my_modal\Plugin\Block\ModalBlock.
         */
        
-       namespace Drupal\my_modal\Plugin\Block;
-       use Drupal\Core\Block\BlockBase;
-       use Drupal\Core\Url;
-       use Drupal\Core\Link;
-       use Drupal\Component\Serialization\Json;
+namespace Drupal\my_modal\Plugin\Block;
+
+use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Url;
+use Drupal\Core\Link;
+use Drupal\Component\Serialization\Json;
        
-       /**
-        * Provides a 'Modal' Block
-        *
-        * @Block(
-        *   id = "modal_block",
-        *   admin_label = @Translation("Modal block"),
-        * )
-        */
-       class ModalBlock extends BlockBase {
-         /**
-          * {@inheritdoc}
-          */
-         public function build() {
-           $link_url = Url::fromRoute('my_modal.modal');
-           $link_url->setOptions([
-             'attributes' => [
-               'class' => ['use-ajax', 'button', 'button--small'],
-               'data-dialog-type' => 'modal',
-               'data-dialog-options' => Json::encode(['width' => 400]),
-             ]
-           ]);
-       
-           return array(
-             '#type' => 'markup',
-             '#markup' => Link::fromTextAndUrl(t('Mostrar modal'), $link_url)->toString(),
-             '#attached' => ['library' => ['core/drupal.dialog.ajax']]
-           );
-         }
-       }
-        
+/**
+ * Provides a 'Modal' Block
+ *
+ * @Block(
+ *   id = "modal_block",
+ *   admin_label = @Translation("Modal block"),
+ * )
+ */
+class ModalBlock extends BlockBase {
+  /**
+   * {@inheritdoc}
+   */
+  public function build() {
+    $link_url = Url::fromRoute('my_modal.modal');
+    $link_url->setOptions([
+      'attributes' => [
+        'class' => ['use-ajax', 'button', 'button--small'],
+        'data-dialog-type' => 'modal',
+        'data-dialog-options' => Json::encode(['width' => 400]),
+      ]
+    ]);
+   
+    return array(
+      '#type' => 'markup',
+      '#markup' => Link::fromTextAndUrl(t('Mostrar modal'), $link_url)->toString(),
+      '#attached' => ['library' => ['core/drupal.dialog.ajax']]
+    );
+  }
+}        
 ```
     
 Este código crea un enlace en el bloque que llama directamente a la url que creamos previamente en nuestro fichero routing.yml.
@@ -229,20 +230,20 @@ Para poder utilizar dicha vista en nuestro pop-up tan solo tendremos que modific
 la función modal() tenga el siguiente aspecto:
 
 ```php
-      public function modal() {
-        $view = Views::getView('my_view');
-        $view->preview('page_1');
-        $options = [
-          'dialogClass' => ['popup-dialog-class', 'language-selector'],
-          'width' => '40%',
-          'display' => 'none'
-        ];
-        $response = new AjaxResponse();
-        $response->addCommand(new OpenModalDialogCommand(t('Available in: '),$view->render(), $options));
-    
-        return $response;
-      }
-      
+public function modal() {
+  $view = Views::getView('my_view');
+  $view->preview('page_1');
+  $options = [
+    'dialogClass' => ['popup-dialog-class', 'language-selector'],
+    'width' => '40%',
+    'display' => 'none'
+  ];
+
+  $response = new AjaxResponse();
+  $response->addCommand(new OpenModalDialogCommand(t('Available in: '),$view->render(), $options));
+
+  return $response;
+}      
 ```
 
 En este código obtenemos la vista utilizando su id o machine name e indicamos que presentación deseamos utilizar; 
