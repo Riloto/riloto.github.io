@@ -143,7 +143,7 @@ almacenará el código de nuestro bloque. La estructura de directorios de nuestr
  
 Dentro de ModalBlock.php añadiremos el siguiente código:
 
-    ```php
+```php
        <?php
        /**
         * @file
@@ -186,7 +186,7 @@ Dentro de ModalBlock.php añadiremos el siguiente código:
          }
        }
         
-    ```
+```
     
 Este código crea un enlace en el bloque que llama directamente a la url que creamos previamente en nuestro fichero routing.yml.
 
