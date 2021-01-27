@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drupal 8 - Creación de un modal o Pop-up
+title: Creación de un Pop-up o modal en Drupal 8
 tags:
   - drupal
   - modal
@@ -19,7 +19,7 @@ visible: 1
 
 <span>Photo by <a href="https://unsplash.com/@knarfy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ryan Moulton</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
-## Drupal 8 - Creación de un modal o Pop-up
+## Creación de un Pop-up o modal en Drupal 8
 
 Es muy frecuente como usuario, la interacción con un Pop-up, ventana emergente o modal. 
 Todas ellas son distintas maneras de llamar al mismo tipo de elemento por lo que utilizaremos estos nombres 
@@ -48,7 +48,6 @@ En primer lugar definiremos una ruta; para ello editaremos/crearemos el fichero 
 
 Añadiremos las siguientes líneas:
 
-    ```
     my_modal.modal:
       path: 'modal-element/modal'
       defaults:
@@ -56,14 +55,14 @@ Añadiremos las siguientes líneas:
         _controller: '\Drupal\my_modal\Controller\CustomModalController::modal'
       requirements:
         _permission: 'access content'
-    ```
+    
 
 Este código crea la ruta nombrada como my_modal.modal donde se indica que cuando un usuario acceda a la url
  "/modal-element/modal" dentro de nuestro site se lanzará nuestro modal. 
  La línea "_controller: '\Drupal\my_modal\Controller\CustomModalController::modal'" hace referencia al controlador 
  encargado de mostrar nuestro pop-up.
  
- ## Creación del Controlador
+## Creación del Controlador
  
  A continuación vamos a definir nuestro controlador; para ello deberemos crear la siguiente estructura de directorios 
  en nuestro módulo:
@@ -78,7 +77,7 @@ Este código crea la ruta nombrada como my_modal.modal donde se indica que cuand
     
 Dentro del fichero CustomModalController.php añadiremos el siguiente código:
    
-    ```php
+```php
     <?php
     
     /**
@@ -106,7 +105,7 @@ Dentro del fichero CustomModalController.php añadiremos el siguiente código:
       }
     }
     
-    ```   
+```   
 
 Este código abrirá un pop-up como el que aparece en la siguiente imagen:
 
@@ -191,22 +190,16 @@ Dentro de ModalBlock.php añadiremos el siguiente código:
     
 Este código crea un enlace en el bloque que llama directamente a la url que creamos previamente en nuestro fichero routing.yml.
 
-    ```
-    $link_url = Url::fromRoute('my_modal.modal');
-    ``` 
+    $link_url = Url::fromRoute('my_modal.modal'); 
 
 Se crea el enlace a partir de **$link_url** en esta línea:
 
-    ```
     '#markup' => Link::fromTextAndUrl(t('Mostrar modal'), $link_url)->toString(),
-    ```
 
 Por último incorporamos la librería encargada de gestionar los dialogs en Drupal. 
 Para ello utilizamos la propiedad **#attached** sobre la que hablaremos con más detenimiento en próximos artículos. 
 
-    ```
     '#attached' => ['library' => ['core/drupal.dialog.ajax']]
-    ```
 
 ## Añadir el bloque a una región 
 
@@ -235,7 +228,7 @@ Para más información sobre la creación y uso de vistas en Drupal 8 al final d
 Para poder utilizar dicha vista en nuestro pop-up tan solo tendremos que modificar nuestro controlador para que 
 la función modal() tenga el siguiente aspecto:
 
-    ```php
+```php
       public function modal() {
         $view = Views::getView('my_view');
         $view->preview('page_1');
@@ -250,15 +243,13 @@ la función modal() tenga el siguiente aspecto:
         return $response;
       }
       
-    ```
+```
 
 En este código obtenemos la vista utilizando su id o machine name e indicamos que presentación deseamos utilizar; 
 en nuestro caso la presentación **page_1** de la vista **my_view**.
 
-    ```
     $view = Views::getView('my_view');
     $view->preview('page_1');
-    ```
 
 A continuación utilizamos el método [render()](https://api.drupal.org/api/drupal/core%21includes%21common.inc/function/render/8.2.x) 
 para mostrar la vista dentro de nuestro modal.     

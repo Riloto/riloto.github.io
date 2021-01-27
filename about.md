@@ -10,7 +10,6 @@ permalink: /about/
 Me llamo Ricardo López Toro y soy de Montilla [Córdoba - Andalucía]. 
 Soy Graduado en Ingeniería Informática por la Universidad de Córdoba (UCO) y llevo trabajando con Drupal desde 2018.
 Actualmente trabajo con Drupal 8 para Ogilvy.
-![Ogilvy](/images/ogilvy.png)
 
 # Trayectoria Profesional
 Mi experiencia laboral comienza en 2018 cuando entro a formar parte de **Ayesa AT** donde participo en proyectos 
@@ -46,5 +45,5 @@ Puede ver más información en mi perfil de drupal.org: [https://www.drupal.org/
 [ricardolopezt8@gmail.com](mailto:ricardolopezt8@gmail.com)
 
 
-![Sitebuilding](/images/forcontu-site-building-deupal-8-en.png) 
-![Backend](/images/forcontu-back-end-deupal-8-en.png) 
+![Sitebuilding](/images/forcontu-site-building-drupal-8-en.png) 
+![Backend](/images/forcontu-back-end-drupal-8-en.png) 
