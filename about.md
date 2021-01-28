@@ -16,9 +16,9 @@ Mi experiencia laboral comienza en 2018 cuando entro a formar parte de **Ayesa A
 Drupal 8 para la Consejería de Igualdad y Políticas Sociales de la Junta de Andalucía.
 Algunos de los proyectos en los que participé fueron:
 
-<video width="320" height="240" controls>
+<!--- <video width="320" height="240" controls>
       <source src="/images/Planes_locales.mp4" type="video/mp4">
-</video>
+</video> --->
 
 * Planes Locales de Intervención en Zonas Desfavorecidas 
 * Sistema para la Gestión de Fondos Sociales Europeos (FSE)
