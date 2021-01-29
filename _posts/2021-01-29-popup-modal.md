@@ -61,8 +61,11 @@ my_modal.modal:
 Este código crea la ruta nombrada como my_modal.modal donde se indica que cuando un usuario acceda a la url
  **/modal-element/modal** dentro de nuestro site se lanzará nuestro modal. 
  La línea: 
- ```_controller: '\Drupal\my_modal\Controller\CustomModalController::modal'``` hace referencia al controlador 
- encargado de mostrar nuestro pop-up.
+ 
+ ```
+ _controller: '\Drupal\my_modal\Controller\CustomModalController::modal'
+ ``` 
+ Hace referencia al controlador encargado de mostrar nuestro pop-up.
  
 ## Creación del Controlador
  
