@@ -59,8 +59,9 @@ my_modal.modal:
 ```    
 
 Este código crea la ruta nombrada como my_modal.modal donde se indica que cuando un usuario acceda a la url
- "/modal-element/modal" dentro de nuestro site se lanzará nuestro modal. 
- La línea "_controller: '\Drupal\my_modal\Controller\CustomModalController::modal'" hace referencia al controlador 
+ **/modal-element/modal** dentro de nuestro site se lanzará nuestro modal. 
+ La línea: 
+ ```_controller: '\Drupal\my_modal\Controller\CustomModalController::modal'``` hace referencia al controlador 
  encargado de mostrar nuestro pop-up.
  
 ## Creación del Controlador
@@ -111,7 +112,7 @@ Este código abrirá un pop-up como el que aparece en la siguiente imagen:
 
 ![Modal](/images/modal_example.jpg) 
 
-Este modal utiliza un comando Ajax para abrir un "dialog modal". 
+Este modal utiliza un comando Ajax para abrir un **dialog modal**. 
 Drupal utiliza Ajax para hacer que una página ya cargada siga comunicándose con el servidor de forma asíncrona, 
 sin necesidad de recargar la página completa. 
 Al final de este post incluiremos algunos enlaces para aportar más información sobre Ajax y "dialog modal".
@@ -254,6 +255,7 @@ en nuestro caso la presentación **page_1** de la vista **my_view**.
 
 A continuación utilizamos el método [render()](https://api.drupal.org/api/drupal/core%21includes%21common.inc/function/render/8.2.x) 
 para mostrar la vista dentro de nuestro modal.     
+
 
 ## Otros enlaces de interés
 
