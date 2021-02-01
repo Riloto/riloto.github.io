@@ -24,7 +24,7 @@ Algunos de los proyectos en los que participé fueron:
 * Sistema para la Gestión de Fondos Sociales Europeos (FSE)
 * Sistema de Información sobre Maltrato Infantil de Andalucía (SIMIA). [fases de análisis y diseño]
     
-Posteriormente en Julio de 2019, buscando afrontar nuevos desafíos pase a formar parte de Everis Center 
+Posteriormente en Julio de 2019, buscando afrontar nuevos desafíos pase a formar parte de **Everis Center** 
 donde formé parte de los primeros integrantes del equipo de Drupal. 
 Durante este periodo trabajé en proyectos Drupal 8 para el grupo [Damm](https://es.wikipedia.org/wiki/Damm) tanto en nuevos desarrollos como en 
 mantenimiento de varios de sus sitios.
@@ -35,7 +35,7 @@ Algunos de los sites en los que participé durante esta etapa fueron:
 * [Turia](https://www.cervezaturia.es/es)
 * [DDI](https://www.dammdistribucionintegral.com/landing)
 
-En Julio de 2020 pase a formar parte de Ogilvy Barcelona para la que trabajo actualmente desde Sevilla.
+En Julio de 2020 pase a formar parte de **Ogilvy** Barcelona para la que trabajo actualmente desde Sevilla.
  
 He participado en varios eventos de comunidad como:
 * Drupal Camp Spain 2019 [Conil]
