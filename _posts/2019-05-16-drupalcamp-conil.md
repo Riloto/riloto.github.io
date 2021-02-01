@@ -97,4 +97,4 @@ En resumen, muy contento tras mi primera experiencia en la DrupalCamp Spain y de
 
 **! DRUPALEA !**
 
-<script id="dsq-count-scr" src="//riloto8-github-io.disqus.com/count.js" async></script>
+<script id="dsq-count-scr" src="//riloto-github-io.disqus.com/count.js" async></script>

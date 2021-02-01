@@ -4,6 +4,20 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
+  <div class="post-categories">
+    {% if post %}
+    {% assign categories = post.categories %}
+    {% assign title = post.title %}
+    {% else %}
+    {% assign categories = page.categories %}
+    {% assign title = page.title %}
+    {% endif %}
+    {% for category in categories %}
+    {% assign segment = category %}
+    <p><a href="{{site.baseurl}}/topics/#{{category|slugize}}">{{category}}</a></p>
+    {% unless forloop.last %}&nbsp;{% endunless %}
+    {% endfor %}
+  </div>
 
   <div class="entry">
     {{ content }}
@@ -12,6 +26,19 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
+
+  <hr>
+  <div class="related-articles">
+    <h2>Related content: {{segment}}</h2>
+    {% for post in site.categories[segment] %}
+    {% unless title == post.title %}
+    <article class="archive-item">
+      <p><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a> - ({{ post.date | date_to_long_string }}) </p>
+    </article>
+    {% endunless %}
+    {% endfor %}
+  </div>
+  <hr>
 
   {% include disqus.html %}
 </article>
