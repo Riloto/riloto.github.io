@@ -106,3 +106,5 @@ Pulsando en Add handler y seleccionando "Alter webform with custom validation" c
 ![Custom handler](/images/handler.png)
 
 De esta forma el Webform seleccionado comprobará que se cumpla nuestro criterio de validación antes de almacenar el formulario.
+
+<script id="dsq-count-scr" src="//riloto-github-io.disqus.com/count.js" async></script>

@@ -269,3 +269,5 @@ para mostrar la vista dentro de nuestro modal.
 * *How to Create Views in Drupal 8* - [https://hostadvice.com/how-to/how-to-create-views-in-drupal-8/](https://hostadvice.com/how-to/how-to-create-views-in-drupal-8/)
  
 * Charla [Views 101](https://asociaciondrupal.es/video/views-101) de Jose Luis Bellido Rojas en la Drupal Camp Spain de 2019 en Conil
+
+<script id="dsq-count-scr" src="//riloto-github-io.disqus.com/count.js" async></script>
