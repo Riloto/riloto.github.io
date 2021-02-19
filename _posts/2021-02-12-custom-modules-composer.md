@@ -30,26 +30,25 @@ Como se puede preveer, esta no es para nada una gestión óptima nuestro módulo
 
 Una posible solución es gestionar nuestro módulo custom mediante composer del mismo modo que si fuese un módulo contrib de los que podemos encontrar en drupal.org
 
-# GitHub
+# GitHub - GitLab
 
-Para poder gestionar nuestro módulo mediante composer necesitaremos crear una release del mismo en GitHub. 
-<!-- Esto anteriormente solo era posible utilizando **GitHub**; pero a partir de **GitLab 11.7.** también tenemos la posibilidad de generar releases en esta plataforma. 
+Para poder gestionar nuestro módulo mediante composer necesitaremos crear una release del mismo. 
+Esto anteriormente solo era posible utilizando **GitHub**; pero a partir de **GitLab 11.7.** también tenemos la posibilidad de generar releases en esta plataforma. 
 
-Independientemente de que plataforma de almacenamiento utilicemos para el código de nuestro módulo, tendremos que  seguir los siguientes pasos: -->
+Independientemente de que plataforma de almacenamiento utilicemos para el código de nuestro módulo, tendremos que  seguir los siguientes pasos: 
 
-Tendremos que seguir los siguientes pasos:
-
-Para hacerlo, comenzaremos accediendo a la sección de **Releases** dentro del repositorio de nuestro módulo en la url: "/releases" como se ve en la imagen. <!-- Y en el caso de utilizar GitLab a la sección **Versiones** (si tenemos nuestra cuenta configurada en castellano) en la url: "/-/releases". -->
+Para hacerlo, comenzaremos accediendo a la sección de **Releases** dentro del repositorio de nuestro módulo en la url: "/releases" como se ve en la imagen. 
+Yen el caso de utilizar GitLab a la sección **Versiones** (si tenemos nuestra cuenta configurada en castellano) en la url: "/-/releases".
 
 ![GitHub_release](/images/GitHub_release.jpg)
 
 En este apartado añadiremos una nueva release seleccionando **Draft a new release** o accediendo a la url: "/releases/new". 
-<!-- Si nuestro repositorio se encuentra alojado en GitLab seleccionaremos **Nueva versión** o accederemos a la url: "/-/releases/new".
+Si nuestro repositorio se encuentra alojado en GitLab seleccionaremos **Nueva versión** o accederemos a la url: "/-/releases/new".
 
 ![GitLab_release](/images/GitLab_release.jpg)
 
 
-Como se puede observar son soluciones muy similares. -->
+Como se puede observar son soluciones muy similares.
 
 Esto nos servirá para que composer pueda gestionar las distintas versiones de nuestro módulo. 
 
