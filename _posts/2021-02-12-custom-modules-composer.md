@@ -32,7 +32,40 @@ Una posible solución es gestionar nuestro módulo custom mediante composer del 
 
 # GitHub - GitLab
 
-Para poder gestionar nuestro módulo mediante composer necesitaremos crear una release del mismo. 
+Para poder gestionar nuestro módulo mediante composer necesitaremos dos cosas.
+En primer lugar, añadiremos un fichero composer.json que incluiremos en el repositorio de nuestro módulo donde especificaremos la información relacionada con el mismo.
+
+Dos de las propiedades más importantes que define este fichero son el **name** y el **type**. 
+Composer permite utilizar muchos tipos de paquetes como librerías, módulos (drupal-module), temas (drupal-theme), etc. En este archivo tambien debemos incluir las dependencias que necesitemos.
+Un ejemplo básico de este fichero composer.json podría ser el siguiente:
+
+```
+{
+    "name": "my_package_/my_module",
+    "description": "My Custom Module",
+    "type": "drupal-module",
+    "homepage": "https://github.com/my-user/my_module_",
+    "authors": [
+        {
+            "name": "my name",
+            "email": "my_email@mail.com"
+        }
+    ],
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "asset-packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    }
+}
+```
+
+A continuación tendremos que crear una release del nuestro módulo. Esta release tendrá asociado un tag que nos servirá para controlar las distintas versiones del código de nuestro  módulo.
+
 Esto anteriormente solo era posible utilizando **GitHub**; pero a partir de **GitLab 11.7.** también tenemos la posibilidad de generar releases en esta plataforma. 
 
 Independientemente de que plataforma de almacenamiento utilicemos para el código de nuestro módulo, tendremos que  seguir los siguientes pasos: 
@@ -62,9 +95,13 @@ Debemos añadir nuestro módulo (my_module) en el archivo composer.json, en el a
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "mymodule": {
+        "my-module": {
             "type": "vcs",
-            "url": "https://github.com/my-user/my-module.git"
+            "url": "https://github.com/my-github-user/my-module.git"
+        }
+        "my-second-module": {
+            "type": "vcs",
+            "url": "https://gitlab.com/my-gitlab-user/my-second-module.git"
         }
     }    
 ```
@@ -76,7 +113,8 @@ En el apartado "require" debemos añadir la versión (release) correspondiente d
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
         "drush/drush": "^9.5",
-        "my_package/my_module": "^1.0"
+        "my_package/my_module": "^1.0",
+        "package/my_second_module": "^1.0"
     },
 ```
 
@@ -91,4 +129,4 @@ composer update my_module
 * *Composer y Drush en el contexto de Drupal* - [https://medium.com/drupal-y-yo/composer-y-drush-en-el-contexto-de-drupal-9883d2cfb007  ](https://medium.com/drupal-y-yo/composer-y-drush-en-el-contexto-de-drupal-9883d2cfb007)
 * *Administrar lanzamientos en un repositorio* - [https://docs.github.com/es/github/administering-a-repository/managing-releases-in-a-repository](https://docs.github.com/es/github/administering-a-repository/managing-releases-in-a-repository)
 * *Repositories - Composer* - [https://getcomposer.org/doc/05-repositories.md#git-alternatives](https://getcomposer.org/doc/05-repositories.md#git-alternatives)
-* *Composer: How to use Git repositories* - [https://getcomposer.org/doc/05-repositories.md#git-alternatives](https://getcomposer.org/doc/05-repositories.md#git-alternatives)
+* *Composer: How to use Git repositories* - [https://daggerhartlab.com/composer-how-to-use-git-repositories](https://daggerhartlab.com/composer-how-to-use-git-repositories)
