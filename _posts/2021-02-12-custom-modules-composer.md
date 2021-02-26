@@ -126,7 +126,7 @@ Posteriormente, añadiremos la versión (release) correspondiente de nuestro mó
 
 La nomenclatura utilizada para indicarle a composer que versión necesitamos para nuestro proyecto sigue la siguiente estructura:
 
-    "Nombre del paquete/Nombre del elemento": "version"
+`"Nombre del paquete/Nombre del elemento": "version"`
 
 Si utilizamos el simbolo "**^**" al comienzo de la versión seleccionada, le estamos indicando a composer que necesitamos una versión **igual o superior** a la indicada.
 
