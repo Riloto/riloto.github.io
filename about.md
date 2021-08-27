@@ -48,5 +48,7 @@ Puede ver más información en mi perfil de drupal.org: [https://www.drupal.org/
 [ricardolopezt8@gmail.com](mailto:ricardolopezt8@gmail.com)
 
 
+![Master](/images/forcontu_badge_master_drupal-8-en.png) 
 ![Sitebuilding](/images/forcontu-site-building-drupal-8-en.png) 
 ![Backend](/images/forcontu-back-end-drupal-8-en.png) 
+![FrontEnd](/images/forcontu_badge_experto-front-end-drupal-8-en.png) 
