@@ -46,8 +46,9 @@ La mayoría de los comandos tienen los mismos alias y son muy similares de una v
 En el siguiente link puedes encontrar recopilados los distintos comandos drush Agrupados por su correspondiente versión: [Drush Commands](https://drushcommands.com/).
 
 
-  - [**Comando (alias)**]
-  - - - - - -
+  [**Comando (alias)**]
+  * * *
+
   - **drush cache:rebuild (drush cr)**: Limpia todas las cachés del site.
 
   - **drush config:import (drush cim)**: Importa la configuración del directorio de configuración. 
