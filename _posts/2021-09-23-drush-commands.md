@@ -43,7 +43,7 @@ A veces es realmente útil contar con un comando drush que nos permita realizar 
 A continuación vamos a repasar algunos de los comandos más comunes además de algunos que bajo mi humilde pueden ser de los más útiles. 
 Para esta lista he recopilado los comandos para Drush en la versión 9/10. 
 La mayoría de los comandos tienen los mismos alias y son muy similares de una versión a otra, pero cuentan con pequeñas variaciones. 
-En el siguiente link puedes encontrar recopilados los distintos comandos drush Agrupados por su correspondiente versión: [Drush Commands](https://drushcommands.com/).
+En el siguiente link puedes encontrar recopilados los distintos comandos drush agrupados por su correspondiente versión: [Drush Commands](https://drushcommands.com/).
 
 
   [**Comando (alias)**]
@@ -99,7 +99,8 @@ En el siguiente link puedes encontrar recopilados los distintos comandos drush A
 
 ## Creación de un comando Drush custom
 
-Para añadir nuestro comando drush personalizado deberemos crear un nuevo módulo o añadirlo a algún módulo custom que ya tengamos creado.
+En muchas ocasiones puede ser interesante generar un comando de Drush personalizado para ejecutar una serie de acciones repetitivas o habituales con el fin de agilizar nuestro desarrollo. 
+Para añadir nuestro comando drush custom deberemos crear un nuevo módulo o añadirlo a algún módulo custom que ya tengamos creado.
 
 En primer lugar debemos crear el fichero **drush.services.yml**
 
@@ -114,13 +115,16 @@ services:
 
 Dentro de nuestro módulo crearemos un fichero "MyDrushCommand.php" dentro de /src/Commands. Es probable que no contemos con alguno de estos directorios en nuestro módulo, de ser así, los generaremos y añadiremos dentro nuestro fichero.
 
-Además de nuestro namespace debemos incluir:  use Drush\Commands\DrushCommands
+Además de nuestro namespace debemos incluir:  
+```
+  use Drush\Commands\DrushCommands
+```
 
 Del mismo modo añadiremos la clase que contendrá el código de nuestro comando extendiendo la clase DrushCommands. 
 
 A continuación, crearemos un método public con anotación. 
 
-¿Que son las Anotaciones o Annotations?
+### ¿Que son las Anotaciones o Annotations?
 
 Las anotaciones son bloques de comentarios en PHP con un formato especial que se utilizan para la descripción de metadatos. Aunque técnicamente es posible utilizar las anotaciones para otros fines, por el momento Drupal sólo las utiliza para el sistema de plugins. Al final de este artículo se encuentran varios links donde podrás encontrar más información sobre Annotations en Drupal 8.
 
