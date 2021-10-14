@@ -10,10 +10,12 @@ tags:
   - compound
   - module
   - backend
+  - plugin
 categories:
   - drupal
   - backend
   - custom
+  - plugins
 comments: true
 visible: 1
 ---
@@ -55,10 +57,10 @@ Para crear un módulo en Drupal 8 podemos seguir el siguiente árticulo de José
 Una vez contamos con nuestro módulo vamos a generar la estructura de nuestro campo custom "Persona". Al lío!!
 
 
-<p>En primer lugar necesitaremos crear un plugin field type para que nuestro campo custom sea visible para la Field API de Drupal.
+<p>En primer lugar necesitaremos crear un <b>Plugin FieldType</b> para que nuestro campo custom sea visible para la Field API de Drupal.
 De esta forma podremos seleccionarlo al añadir un nuevo campo a cualquier entidad.
 
-Para ello, una vez desplegado nuestro módulo; accederemos a al directorio "nuestro_modulo/Plugin/Field". Y dentro de Field, encontraremos otros 3 directorios: "FieldFormatter, FieldType, FieldWidget".</p>
+Para ello, una vez desplegado nuestro módulo; crearemos el directorio "nuestro_modulo/Plugin/Field". Y dentro de Field, generaremos otros 3 directorios: "FieldFormatter, FieldType, FieldWidget".</p>
 
 Con la siguiente estructura:
   nuestro_modulo/Plugin/Field
@@ -201,7 +203,7 @@ De modo que crearemos un archivo en el directorio /src/Plugin/FieldWidget bajo e
 ```php
 <?php
 
-namespace Drupal\plan_local\Plugin\Field\FieldWidget;
+namespace Drupal\nuestro_modulo\Plugin\Field\FieldWidget;
 
 use Drupal;
 use Drupal\Core\Field\FieldItemListInterface;
@@ -284,6 +286,13 @@ Con los formatters definiremos como se mostrará nuestro campo.
 Para ello crearemos un fichero "PersonaFormatter.php" en la carpeta src/Plugin/FieldFormatter con las siguiente estructura:
 
 ```php
+<?php
+
+namespace Drupal\my_module\Plugin\Field\FieldFormatter;
+
+use Drupal\Core\Field\FieldItemListInterface;
+use Drupal\Core\Field\FormatterBase;
+
 /**
  * Plugin implementation of the 'PersonaFormatter' formatter.
  *
