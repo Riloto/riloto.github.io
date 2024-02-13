@@ -57,7 +57,8 @@ Puede ver más información en mi perfil de drupal.org: [https://www.drupal.org/
 
 ![AcquiaCertification](/images/Acquia_D9_developer_badge.png)
 ---
-$~~~$
+<br>
+
 ![Master](/images/forcontu_badge_master_drupal-8-en.png)
 ---
 ![Sitebuilding](/images/forcontu-site-building-drupal-8-en.png)
