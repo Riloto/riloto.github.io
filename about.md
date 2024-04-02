@@ -9,7 +9,7 @@ permalink: /about/
 # Me Presento
 Me llamo Ricardo López Toro y soy de Montilla [Córdoba - Andalucía].
 Soy Graduado en Ingeniería Informática por la Universidad de Córdoba (UCO) y llevo trabajando con Drupal desde 2018.
-Actualmente trabajo con Drupal 8 para Ogilvy.
+Actualmente trabajo para Ideal Education Group en modalidad 100% remota en varios portales Drupal del grupo.
 
 # Trayectoria Profesional
 Mi experiencia laboral comienza en 2018 cuando entro a formar parte de **Ayesa AT** donde participo en proyectos
@@ -40,9 +40,11 @@ En el transcurso de esta etapa compaginé mi jornada laboral con el Máster de D
 En Julio de 2020 pase a formar parte de **Ogilvy** Barcelona trabajando de manera 100% remota hasta Abril de 2023.
 Durante esta etapa pude participar en un gran número de proyectos para el grupo Nestlé.
 
-En 2022 obtuve la certificación Drupal 9 Developer de Acquia
+En 2022 obtuve la certificación Drupal 9 Developer de Acquia.
 
-En Abril de 2023 comencé una nueva etapa formando parte de **The White Team** donde trabajo en formato remoto en proyectos de Drupal para Promotur Turismo de Canarias.
+En Abril de 2023 comencé una nueva etapa formando parte de **The White Team** donde trabajé en formato remoto en proyectos de Drupal para Promotur Turismo de Canarias. Durante esta temporada llevamos a cabo la actualización de varios sites a Drupal 9 con la correspondiente actualización a PHP 8.1; todo esto unido a la migración de toda la estructura a un nuevo proveedor de servicio. Esta situación supuso todo un desafío que superamos con éxito.   
+
+En 2024, nuevamente en Abril, comienza mi andadura con **Ideal Education Group** en la que trabajo actualmente, con varios retos y un prometedor futuro.
 
 He participado en varios eventos de comunidad como:
 * Drupal Camp Spain 2019 [Conil]
